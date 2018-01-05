@@ -1,0 +1,99 @@
+<html> 
+	<head>
+		<title> Blog for a Log </title>
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<script>
+			function banner(){ 
+				var text = confirm("Are you sure you want to leave this rare log-oriented wesite? It's a dangerous world outside..."); 
+				return text; 
+			} 
+			function answer(){
+				var radio = document.getElementsByName("q"); 
+				var selection = false; 
+				var message = ""; 
+				
+				for( var i = 0; i < radio.length; i++) { 
+					if(radio[i].value == "anger" && radio[i].checked == true) { 
+						selection = true; 
+					} //end if statement 
+					if(selection == true) {
+						message = "<p style='color:green, font-size:15px'>You truly understand.</p>"; 
+					} else if(selection == false) { 
+						
+						message = "<p style='color:red'>Keep searching.</p>"; 
+
+					}
+					document.getElementById("response").innerHTML = message;
+				} //end for loop 
+			}//end function answer
+		</script>
+		<font face="sans-serif" >
+	</head>
+	<body id="body">
+		<center>
+			<header><a href="https://www.khanacademy.org/" onclick ="return banner();">A Blog for Logs, by Logs</a></header>
+
+		</center>
+		<nav>
+			<ul id="navmenu">
+				<li class="navitem"><a href="OurMission.html">Home</a></li>
+				<li class="navitem"><a href="OurMission.html">Our Mission</a></li>
+				<li class="navitem"><a href="OurMission.html">About the Author</a></li>
+
+			</ul>
+		</nav>
+		<div id = "rightSide">
+			<center>
+				<h2>Understand your inner trunk better with this question:</h2>
+				<p class="inquiry">What is the capital of Wisconsin?</p>
+			</center>
+			<center>
+				<div class="trivia">
+					<div id="response">Your answer will be displayed here.</div>
+
+					<form>
+						<input type="radio" name="q" value="pineapple">Indianapolis<br>
+						<input type="radio" name="q" value="anger">Madison<br>
+						<input type="radio" name="q" value="witch">Salem<br>
+						<input type="radio" name="q" value="BURN">Hell<br>
+					</div>
+						<input type="button" name="submit" value="Click to Understand" id="button" onclick="answer();"><br>
+					</form>
+				
+			</center>
+		</div>
+		<div id="leftSide">
+			<center>
+				<p>If you are a <i>log</i> looking to change your <u><b>destiny</b></u> forever, you have come to the right place</p>
+			</center>
+			<center>
+				<h4> During your time at this website, you will learn...</h4>
+			</center>
+			<center>
+				<ul>
+					<li class="insp">How to become stronger though photosynthesis</li>
+					<li class="insp">Understand what it takes to sit still for years, while you <i>pine</i> away</li>
+					<li class="insp">How to benefit yourself and others through your role in the ecosystem</li>
+				</ul>
+			</center>
+		</div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Elmer_Tree_(Yucca_brevifolia);_Desert_Queen_Valley.jpg" width="1337" class="img">
+		<hr>
+		<video width="220px" height="100px" controls id="vidvid"><source src="Videos/driving 4.jpg" type="video/jpg">Your browser does not support HTML5 video. That sucks</source></video>
+		<audio width="220px" height="100px" controls>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML5 audio. That sucks.
+		</audio>
+
+		<img src="https://bleachthemind.files.wordpress.com/2010/12/fire01.jpg" width="1337" class="img">
+		<hr>
+
+
+		<a href="http://www.nygaardlogging.com/" >For local log resources, click here</a>
+		<center>
+			<footer>
+				Erik Cooley, CEO of Log for a Log LLC<br><span class="email">erikjcooley@gmail.com</span><br>v.1.8
+			</footer>
+		</center>
+	</body> 
+</html> 
